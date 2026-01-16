@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "imageUrl": "/images/forPeers.png",
+    "imageAltName": "Cover picture for peers card",
+    "title": "For Peers",
+    "description": "Tools and resources built to simplify student life.",
+    "buttonLabel": "Get Started",
+    "buttonIcon": "i-lucide-graduation-cap"
+  },
+  {
+    "id": 2,
+    "imageUrl": "/images/forHiring.png",
+    "imageAltName": "Cover picture for hiring card",
+    "title": "For Hiring",
+    "description": "My professional journey, skills, and past work.",
+    "buttonLabel": "See Portfolio",
+    "buttonIcon": "i-lucide-briefcase"
+  },
+  {
+    "id": 3,
+    "imageUrl": "/images/sandbox.png",
+    "imageAltName": "Cover picture for sandbox card",
+    "title": "Sandbox",
+    "description": "A space for creative code and experimental builds.",
+    "buttonLabel": "View Demos",
+    "buttonIcon": "i-lucide-code"
+  }
+]

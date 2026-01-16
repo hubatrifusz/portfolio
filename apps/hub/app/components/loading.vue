@@ -22,8 +22,8 @@ watch(
   >
     <div
       v-for="i in 3"
-      class="aspect-5/7 w-8 bg-white rounded-sm transition-all duration-500 ease-in-out"
-      :class="{ 'w-48 rounded-xl': isExiting }"
+      class="aspect-5/7 w-8 bg-secondary rounded-sm transition-all duration-500 ease-in-out"
+      :class="{ 'w-56 rounded-xl': isExiting }"
     ></div>
   </div>
 </template>

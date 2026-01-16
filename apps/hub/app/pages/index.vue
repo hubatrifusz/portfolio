@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import cardData from "~/data/hubCards.json";
+
 const props = defineProps<{
   loaded: boolean;
 }>();
@@ -20,12 +22,21 @@ watch(
 
 <template>
   <div
-    class="w-screen h-screen flex flex-row justify-center items-center gap-10"
+    class="w-screen h-screen flex flex-row flex-wrap justify-center items-center gap-10 p-12"
   >
     <Logo
-      class="absolute top-0 left-4 -translate-y-full transition-all duration-500"
+      class="fixed top-0 left-4 -translate-y-full transition-all duration-500"
       :class="{ 'translate-y-full': startAnimation }"
     ></Logo>
-    <div v-for="i in 3" class="aspect-5/7 w-48 bg-white rounded-xl"></div>
+    <HubCard
+      v-for="card in cardData"
+      :image-url="card.imageUrl"
+      :image-alt-name="card.imageAltName"
+      :title="card.title"
+      :description="card.description"
+      :button-label="card.buttonLabel"
+      :button-icon="card.buttonIcon"
+      :loaded="startAnimation"
+    ></HubCard>
   </div>
 </template>

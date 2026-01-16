@@ -15,14 +15,15 @@
   --color-accent-800: #9d2c18;
   --color-accent-900: #822819;
   --color-accent-950: #461109;
+
+  --color-main: #0d090a;
+  --color-secondary: #fdf7fa;
 }
 
 :root {
-  --color-main: #0d090a;
   --ui-bg: var(--color-main);
   --ui-text-inverted: var(--color-main);
 
-  --color-secondary: #fdf7fa;
   --ui-secondary: var(--color-secondary)
 
   --color-accent: #ff785a;
