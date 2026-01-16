@@ -23,6 +23,7 @@
   --ui-text-inverted: var(--color-main);
 
   --color-secondary: #fdf7fa;
+  --ui-secondary: var(--color-secondary)
 
   --color-accent: #ff785a;
 
