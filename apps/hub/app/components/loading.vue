@@ -7,10 +7,10 @@ const emit = defineEmits(["finished"]);
 
 watch(
   () => props.isExiting,
-  (newVal) => {
+  () => {
     setTimeout(() => {
-        emit("finished");
-    }, 500)
+      emit("finished");
+    }, 500);
   }
 );
 </script>
@@ -22,6 +22,7 @@ watch(
   >
     <div
       v-for="i in 3"
+      :key="i"
       class="aspect-5/7 w-8 bg-secondary rounded-sm transition-all duration-500 ease-in-out"
       :class="{ 'w-56 rounded-xl': isExiting }"
     ></div>

@@ -26,8 +26,8 @@ watch(
 
 <template>
   <div
-    class="aspect-5/7 w-56 rounded-xl bg-secondary overflow-hidden flex flex-col"
     id="container"
+    class="aspect-5/7 w-56 rounded-xl bg-secondary overflow-hidden flex flex-col"
   >
     <div
       class="grow bg-cover bg-center bg-no-repeat transition-all duration-500 ease-in-out bg-black/20 bg-blend-overlay"

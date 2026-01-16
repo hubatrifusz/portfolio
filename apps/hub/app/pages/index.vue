@@ -30,6 +30,7 @@ watch(
     ></Logo>
     <HubCard
       v-for="card in cardData"
+      :key="card.id"
       :image-url="card.imageUrl"
       :image-alt-name="card.imageAltName"
       :title="card.title"
