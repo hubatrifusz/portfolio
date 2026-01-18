@@ -17,7 +17,7 @@ watch(
 
 <template>
   <div
-    class="w-screen h-screen flex flex-row justify-center items-center gap-2 transition-all duration-500 ease-in-out"
+    class="w-screen h-screen flex flex-row flex-wrap justify-center items-center gap-2 transition-all duration-500 ease-in-out"
     :class="{ 'gap-10': isExiting }"
   >
     <div
