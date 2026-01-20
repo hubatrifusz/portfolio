@@ -20,7 +20,7 @@ watch(
       }, 50);
     }
   },
-  { immediate: true }
+  { immediate: true },
 );
 </script>
 
@@ -30,22 +30,26 @@ watch(
     class="aspect-5/7 w-56 rounded-xl bg-secondary overflow-hidden flex flex-col"
   >
     <div
-      class="grow bg-cover bg-center bg-no-repeat transition-all duration-500 ease-in-out bg-black/20 bg-blend-overlay"
+      class="grow relative overflow-hidden bg-cover bg-center bg-no-repeat transition-all duration-500 ease-in-out bg-black/20 bg-blend-overlay"
       :style="{ backgroundImage: `url('${imageUrl}')` }"
       :class="startAnimation ? 'translate-y-0' : '-translate-y-full'"
-    ></div>
+    >
+      <div class="grain absolute inset-0 pointer-events-none"></div>
+    </div>
+
     <div
-      class="p-3 transition-all duration-500 ease-in-out"
+      class="p-3 transition-all duration-500 ease-in-out bg-secondary"
       :class="startAnimation ? 'translate-y-0' : 'translate-y-full'"
     >
       <div>
         <h1 class="text-main font-bold text-lg">{{ title }}</h1>
-        <p class="text-xs text-gray-700">{{ description }}</p>
+        <p class="text-xs text-gray-700 line-clamp-2">{{ description }}</p>
       </div>
       <UButton
         :label="buttonLabel"
         :icon="buttonIcon"
         size="sm"
+        variant="solid"
         class="cursor-pointer mt-4"
       ></UButton>
     </div>

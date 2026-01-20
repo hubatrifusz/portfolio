@@ -26,7 +26,7 @@ watch(
   >
     <Logo
       class="fixed top-0 left-4 -translate-y-full transition-all duration-500"
-      :class="{ 'translate-y-full': startAnimation }"
+      :class="{ 'translate-y-0 top-4': startAnimation }"
     ></Logo>
     <HubCard
       v-for="card in cardData"

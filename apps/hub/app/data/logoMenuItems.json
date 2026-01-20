@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "icon": "i-lucide-settings",
+    "label": "Settings"
+  },
+  {
+    "id": 2,
+    "icon": "i-lucide-globe",
+    "label": "Language",
+    "options": [
+      {
+        "label": "English",
+        "value": "en"
+      },
+      {
+        "label": "Magyar",
+        "value": "hu"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "icon": "i-lucide-sun-moon",
+    "label": "Theme",
+    "options": [
+      {
+        "label": "System",
+        "icon": "i-lucide-monitor-speaker"
+      },
+      {
+        "label": "Dark",
+        "icon": "i-lucide-moon"
+      },
+      {
+        "label": "Light",
+        "icon": "i-lucide-sun"
+      }
+    ]
+  }
+]
